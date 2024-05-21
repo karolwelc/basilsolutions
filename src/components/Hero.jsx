@@ -1,6 +1,5 @@
 import styles from '../style'
 import { discount, robot } from '../assets'
-import GetStarted from './GetStarted'
 
 const Hero = () => {
   return (
@@ -12,22 +11,13 @@ const Hero = () => {
            Basil <br className='sm:block hidden'/> {" "}
             <span className='text-gradient'>Solutions</span> {" "}
           </h1>
-          <div className='ss:flex hidden md:mr-4 mr-0'>
-            <GetStarted/>
-          </div>
+          
         </div>
        
         
       </div>
-      <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}>
-       
-        <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />
-        <div className="absolute z-[1] w-[80%] h-[80%] rounded-full white__gradient bottom-40" />
-        <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient"/>
-      </div>
-      <div className={`ss:hidden ${styles.flexCenter}`}>
-        <GetStarted/>
-      </div>
+      
+      
     </section>
   )
 }

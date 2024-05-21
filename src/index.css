@@ -36,41 +36,14 @@
 .text-gradient {
   background: radial-gradient(
     64.18% 64.18% at 71.16% 35.69%,
-    #a7f2cc 0.89%, /* Light Green */
-    #8ee9b5 17.23%, /* Medium Green */
-    #6fe0a1 42.04%, /* Dark Green */
-    #4ad58e 55.12%, /* Deeper Green */
-    #29c77b 71.54%, /* Even Deeper Green */
-    #00a657 100% /* Green */
+    #72c664 0.89%, /* Light Green */
+    #62b252 100% /* Green */
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
 }
-.bg-blue-gradient {
-  background: linear-gradient(
-    157.81deg,
-    #a7f2cc 0.89%, /* Light Green */
-    #8ee9b5 17.23%, /* Medium Green */
-    #6fe0a1 42.04%, /* Dark Green */
-    #4ad58e 55.12%, /* Deeper Green */
-    #29c77b 71.54%, /* Even Deeper Green */
-    #00a657 100% /* Green */
-    
-  );
-}
-/* .bg-blue-gradient {
-  background: linear-gradient(
-    157.81deg,
-    #def9fa -43.27%,
-    #bef3f5 -21.24%,
-    #9dedf0 12.19%,
-    #7de7eb 29.82%,
-    #5ce1e6 51.94%,
-    #33bbcf 90.29%
-  );
-} */
 
 .bg-black-gradient {
   background: linear-gradient(
@@ -82,12 +55,7 @@
 }
 
 .bg-black-gradient-2 {
-  background: linear-gradient(
-    -168.39deg,
-    #ffffff -278.56%,
-    #6d6d6d -78.47%,
-    #11101d 91.61%
-  );
+  background: rgb(56, 56, 56);
 }
 
 .bg-gray-gradient {
@@ -153,10 +121,10 @@
   background: var(--black-gradient);
 }
 
-.blue__gradient {
+/* .blue__gradient {
   background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #0cd45c 100%);
   filter: blur(100px);
-}
+} */
 
 .pink__gradient {
   background: linear-gradient(90deg, #f4c4f3 0%, #fc67fa 100%);
@@ -166,4 +134,136 @@
 .white__gradient {
   background: rgba(255, 255, 255, 0.6);
   filter: blur(300px);
+}
+/* In your CSS file or style module */
+
+.text-gray-300 {
+  color: #d1d5db; /* Adjust as necessary */
+}
+
+.bg-gray-700 {
+  background-color: transparent; /* Adjust as necessary */
+}
+
+.bg-dark-gradient {
+  background: rgb(250, 247, 247); /* Adjust as necessary */
+}
+
+.focus\:outline-none {
+  outline: none;
+}
+
+.focus\:ring-2 {
+  box-shadow: 0 0 0 2px var(--ring-color);
+}
+
+.focus\:ring-blue-500 {
+  --ring-color: #5e5e5e; /* Adjust as necessary */
+}
+
+.transition-colors {
+  transition: background-color 0.3s;
+}
+
+.duration-300 {
+  transition-duration: 300ms;
+}
+
+.hover\:bg-blue-600:hover {
+  background-color: #838383; /* Adjust as necessary */
+}
+
+.bg-blue-gradient {
+  border: #d1d5db;
+  background: rgb(124, 124, 124);;
+}
+
+.bg-dark-gradient {
+  background: transparent;
+}
+
+.custom-bg {
+  background: transparent;
+}
+
+
+
+/* Faq.css */
+
+/* FAQ item container */
+.faq-container {
+  left: 16px;
+  max-width: 1600px;
+  width: 100%;
+   /* Adjust as needed */
+  margin: auto;
+  background: transparent;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* FAQ item */
+.faq-item {
+  margin-bottom: 20px; /* Add spacing between FAQ items */
+}
+
+/* FAQ question */
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  cursor: pointer;
+  background-color: linear-gradient(
+    -168.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+  ); /* Dark background color for question */
+  border-radius: 8px;
+  color: #fff; /* White text color */
+  transition: background-color 0.3s ease;
+  width: 100%; /* Ensure the width is 100% */
+}
+
+.faq-question:hover {
+  
+  background: var(--black-gradient);; /* Darken background color on hover */
+}
+
+.faq-question-text {
+  margin: 0;
+  width: 90%; /* Allow the text to take up most of the space */
+ 
+  flex-grow: 1; /* Allow the text to take available space */
+}
+
+/* FAQ answer */
+.faq-answer {
+  padding: 15px 20px;
+  background-color: linear-gradient(
+    -168.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+  ); /* Darker background color for answer */
+  color: #ddd; /* Light text color */
+  border: 1px solid #444; /* Border for answer */
+  border-top: none;
+  border-radius: 0 0 8px 8px; /* Rounded bottom corners for answer */
+  margin: 0;
+  width: 100%; /* Ensure the width is 100% */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* FAQ toggle icon */
+.faq-toggle {
+ 
+  color: #fff; /* White color for toggle icon */
+  transition: transform 0.3s ease;
+}
+
+.open .faq-toggle {
+  transform: rotate(180deg); /* Rotate toggle icon when answer is open */
 }

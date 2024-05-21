@@ -1,15 +1,7 @@
 import { 
-  people01, 
-  people02, 
-  people03, 
-  facebook, 
-  instagram, 
-  linkedin, 
+ 
   twitter, 
-  airbnb, 
-  binance, 
-  coinbase, 
-  dropbox, 
+
   send, 
   shield, 
   star
@@ -31,7 +23,8 @@ export const navLinks = [
   {
     id: "faq",
     title: "Faq",
-  }
+  },
+  { id: "contact", title: "Contact" },
 
 ];
 
@@ -91,7 +84,6 @@ export const feedback = [
       "Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver.",
     name: "Herman Jensen",
     title: "Client",
-    img: people01,
   },
   {
     id: "feedback-2",
@@ -99,7 +91,6 @@ export const feedback = [
       "Money makes your life easier. If you're lucky to have it, you're lucky.",
     name: "Steve Mark",
     title: "Client",
-    img: people02,
   },
   {
     id: "feedback-3",
@@ -107,7 +98,6 @@ export const feedback = [
       "It is usually people in the money business, finance, and international trade that are really rich.",
     name: "Kenn Gallagher",
     title: "Client",
-    img: people03,
   },
 ];
 
