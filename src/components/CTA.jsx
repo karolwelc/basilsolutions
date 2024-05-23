@@ -14,10 +14,10 @@ const ContactForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const webhookUrl = 'https://discord.com/api/webhooks/1242535850261352488/Oa0Wmnaj7N7ff4P7905elpAz2NzDS_Wn_IgSg9poy0zpxR3qTgpom-BJhwiUgo2u7Ft4';
+    const webhookUrl = 'https://discord.com/api/webhooks/1242578214518390896/zd6Z6M0puhMz5f7eGQgYx5v5QJR9aGQN3KWHkIsCCOdhyf4IY6pSPO2aaY6y-sYWvo6Z';
 
     const payload = {
-      content: `New contact form submission:\n\n**Name**: ${formData.name}\n**Email**: ${formData.email}\n**Message**: ${formData.message}`,
+      content: `New contact form submission:\n\n**Name**: ${formData.name}\n**Email**: ${formData.email}\n**Phone**: ${formData.phone}\n**Message**: ${formData.message}`,
     };
 
     try {
@@ -34,6 +34,7 @@ const ContactForm = () => {
         setFormData({
           name: '',
           email: '',
+          phone: '',
           message: '',
         });
       } else {
@@ -74,6 +75,20 @@ const ContactForm = () => {
           className='mt-1 p-3 w-full border rounded-md text-white bg-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500'
           placeholder='you@example.com'
           value={formData.email}
+          onChange={handleChange}
+          required
+        />
+      </div>
+      <div className='mb-4 w-full'>
+        <label htmlFor='phone' className='block text-sm font-medium text-gray-300 mb-1'>
+          Phone
+        </label>
+        <input
+          type='text'
+          id='phone'
+          className='mt-1 p-3 w-full border rounded-md text-white bg-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500'
+          placeholder='Your Phone'
+          value={formData.phone}
           onChange={handleChange}
           required
         />

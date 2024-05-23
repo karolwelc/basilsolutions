@@ -185,7 +185,9 @@
 .custom-bg {
   background: transparent;
 }
-
+.hover-link:hover {
+  color: rgb(231, 230, 230); /* Replace with your desired color */
+}
 
 
 /* Faq.css */

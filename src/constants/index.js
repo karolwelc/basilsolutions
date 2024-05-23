@@ -108,29 +108,30 @@ export const stats = [
 
 export const footerLinks = [
   {
-    title: "Useful Links",
+    title: "Mail", 
     links: [
       {
-        name: "Terms & Services",
-        link: "https://www.hoobank.com/terms-and-services/",
+        name: "bazyl@basilsolutions.pl",
+        link: "mailto:bazyl@basilsolutions.pl",
+      },
+      
+    ],
+  },
+  {
+    title: "Whatsapp",
+    links: [
+      {
+        name: "+48 733 602 243",
+        link: "https://wa.me/+48733602243",
       },
     ],
   },
   {
-    title: "Community",
+    title: "Linkdin",
     links: [
       {
-        name: "Help Center",
-        link: "https://www.hoobank.com/help-center/",
-      },
-    ],
-  },
-  {
-    title: "Partner",
-    links: [
-      {
-        name: "Become a Partner",
-        link: "https://www.hoobank.com/become-a-partner/",
+        name: "Bazyli Pospiszyl",
+        link: "https://www.linkedin.com/in/bazyli-pospiszyl-03ab37274/",
       },
     ],
   },
